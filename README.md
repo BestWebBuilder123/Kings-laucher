@@ -64,6 +64,10 @@ We want the project page to make it easy to understand exactly what is available
 
 These points will be updated when verified project information is available. Please do not assume that the downloadable executable is open source.
 
+## Project website
+
+A responsive landing page is included at <code>docs/index.html</code>. To publish it as a public GitHub Pages site, complete the one-time setup in [docs/PUBLISHING.md](docs/PUBLISHING.md). The intended address after deployment is https://bestwebbuilder123.github.io/Kings-laucher/.
+
 ## Releases and updates
 
 Use the [Releases page](https://github.com/BestWebBuilder123/Kings-laucher/releases) for official version downloads and release notes. Changes are tracked in the [changelog](CHANGELOG.md).
