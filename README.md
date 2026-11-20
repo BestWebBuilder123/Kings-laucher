@@ -66,7 +66,7 @@ These points will be updated when verified project information is available. Ple
 
 ## Project website
 
-A responsive landing page is included at <code>docs/index.html</code>. To publish it as a public GitHub Pages site, complete the one-time setup in [docs/PUBLISHING.md](docs/PUBLISHING.md). The intended address after deployment is https://bestwebbuilder123.github.io/Kings-laucher/.
+A responsive landing page is included at <code>docs/index.html</code>. To publish it as a public GitHub Pages site, select **Deploy from a branch → main → /docs** in [Pages settings](https://github.com/BestWebBuilder123/Kings-laucher/settings/pages). Full instructions: [docs/PUBLISHING.md](docs/PUBLISHING.md).
 
 ## Releases and updates
 
