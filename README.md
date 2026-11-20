@@ -5,7 +5,7 @@
 A focused place for launch tools, Fast Flag configuration, game discovery, and recording features.</p>
 <p align="center">
   <a href="https://github.com/BestWebBuilder123/Kings-laucher/releases/latest"><img src="https://img.shields.io/github/v/release/BestWebBuilder123/Kings-laucher?display_name=tag&style=for-the-badge&color=8b7bff" alt="Latest release"></a>
-  <a href="https://img.shields.io/github/downloads/BestWebBuilder123/Kings-laucher/total"><img src="https://img.shields.io/github/downloads/BestWebBuilder123/Kings-laucher/total?style=for-the-badge&color=33b7a5" alt="GitHub downloads"></a>
+  <a href="https://github.com/BestWebBuilder123/Kings-laucher/releases"><img src="https://img.shields.io/github/downloads/BestWebBuilder123/Kings-laucher/total?style=for-the-badge&color=33b7a5" alt="GitHub downloads"></a>
   <a href="https://github.com/BestWebBuilder123/Kings-laucher/issues"><img src="https://img.shields.io/github/issues/BestWebBuilder123/Kings-laucher?style=for-the-badge&color=65758b" alt="Open issues"></a>
 </p>
 <p align="center">
