@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101426">
+<meta name="description" content="Kings Laucher is an independent Roblox launcher and companion client. Explore the v1.0.0 release, features, download information, and security notes.">
+<meta property="og:title" content="Kings Laucher — Launch. Configure. Capture.">
+<meta property="og:description" content="An independent desktop companion project with launcher tools, Fast Flag configuration, game discovery, and capture features.">
+<meta property="og:type" content="website">
+<title>Kings Laucher — Launch. Configure. Capture.</title>
+<link rel="icon" href="./assets/brand.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--bg:#0c1020;--panel:#151b31;--line:rgba(202,207,255,.13);--text:#f4f5ff;--muted:#aab2d0;--purple:#9a88ff;--mint:#67d8ca;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(112,95,231,.18),transparent 36rem),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(12,16,32,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.02em}.brand img{width:40px;height:40px;border-radius:12px}nav{display:flex;gap:26px;align-items:center}nav a{color:var(--muted);text-decoration:none;font-size:14px}nav a:hover{color:var(--text)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line);transition:transform .18s ease,border-color .18s ease}.nav-cta,.btn.primary{background:linear-gradient(135deg,#8b7aff,#6659d8);border-color:transparent;color:white;box-shadow:0 12px 34px rgba(112,93,231,.22)}.btn.secondary{background:rgba(255,255,255,.035);color:var(--text)}.btn:hover,.nav-cta:hover{transform:translateY(-2px);border-color:rgba(181,171,255,.6)}
+.hero{padding:92px 0 82px;position:relative;overflow:hidden}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(103,216,202,.25);border-radius:999px;padding:7px 12px;color:#a5eee4;background:rgba(103,216,202,.07);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--mint);border-radius:50%;box-shadow:0 0 12px var(--mint)}
+h1{font-size:clamp(46px,7vw,82px);line-height:1.02;letter-spacing:-.065em;max-width:850px;margin:25px 0 22px}h1 span{background:linear-gradient(100deg,#b5aaff,#76e1d5);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:19px;color:var(--muted);max-width:690px;margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;color:var(--muted);font-size:13px}.meta strong{color:var(--text);font-weight:700}
+.section{padding:68px 0}.section-head{max-width:650px;margin-bottom:28px}.kicker{color:var(--mint);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}h2{font-size:clamp(29px,4vw,42px);line-height:1.12;letter-spacing:-.04em;margin:10px 0}.sub{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));padding:23px;min-height:178px}.card .icon{width:42px;height:42px;border-radius:13px;background:rgba(154,136,255,.12);color:#c3b8ff;display:grid;place-items:center;font-size:20px;margin-bottom:17px}.card h3{margin:0 0 7px;font-size:17px}.card p{color:var(--muted);font-size:14px;margin:0}
+.release{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:stretch}.release-main,.release-side{border:1px solid var(--line);border-radius:22px;background:var(--panel);padding:30px}.version{font-size:42px;font-weight:850;letter-spacing:-.05em;margin:10px 0}.pill{display:inline-block;border:1px solid rgba(103,216,202,.26);background:rgba(103,216,202,.08);color:#a8eee4;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800}.details{display:grid;grid-template-columns:130px 1fr;gap:11px 18px;margin:24px 0 0;font-size:14px}.details dt{color:var(--muted)}.details dd{margin:0;overflow-wrap:anywhere}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;color:#d8d4ff;overflow-wrap:anywhere}
+.notice{border:1px solid rgba(242,190,105,.28);background:rgba(242,190,105,.065);padding:18px 20px;border-radius:15px;color:#e8d8b8;font-size:14px;margin-top:18px}.notice strong{color:#ffe6b5}.transparency{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.fact{border:1px solid var(--line);border-radius:16px;padding:20px;background:rgba(255,255,255,.025)}.fact strong{display:block;margin-bottom:5px}.fact span{color:var(--muted);font-size:14px}
+.cta-panel{display:flex;justify-content:space-between;align-items:center;gap:28px;padding:34px;border:1px solid rgba(154,136,255,.25);border-radius:22px;background:linear-gradient(120deg,rgba(115,98,220,.16),rgba(103,216,202,.06))}.cta-panel p{color:var(--muted);margin:7px 0 0}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot a{color:#c7c5ef;text-decoration:none}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.release{grid-template-columns:1fr}.hero{padding:70px 0 60px}.cta-panel{align-items:flex-start;flex-direction:column}}@media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 28px))}.grid,.transparency{grid-template-columns:1fr}.details{grid-template-columns:1fr;gap:3px}.details dd{margin-bottom:10px}.meta{gap:12px}.release-main,.release-side{padding:22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top"><img src="./assets/brand.svg" alt=""><span>KINGS LAUCHER</span></a>
+<nav aria-label="Main navigation"><a href="#features">Features</a><a href="#release">Release</a><a href="#trust">Transparency</a><a href="https://github.com/BestWebBuilder123/Kings-laucher">GitHub</a></nav>
+<a class="nav-cta" href="https://github.com/BestWebBuilder123/Kings-laucher/releases/latest">View release ↗</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div class="eyebrow"><span class="dot"></span> Independent desktop project</div>
+<h1>Launch smarter.<br><span>Capture the moment.</span></h1>
+<p class="lead">Kings Laucher brings launcher utilities, Fast Flag configuration, game discovery, and gameplay capture features together in one customizable desktop experience.</p>
+<div class="actions"><a class="btn primary" href="https://github.com/BestWebBuilder123/Kings-laucher/releases/latest">Explore v1.0.0 release ↗</a><a class="btn secondary" href="https://github.com/BestWebBuilder123/Kings-laucher">View repository ↗</a></div>
+<div class="meta"><span>Latest release <strong>v1.0.0</strong></span><span>Release asset <strong>Windows .exe</strong></span><span>Project <strong>Independent</strong></span></div>
+</div></section>
+<section class="section" id="features"><div class="wrap">
+<div class="section-head"><div class="kicker">What it does</div><h2>Useful tools, one launcher.</h2><p class="sub">These feature summaries are based on the published v1.0.0 release description. Availability and behavior may vary by system.</p></div>
+<div class="grid">
+<article class="card"><div class="icon" aria-hidden="true">⚙</div><h3>Fast Flag tools</h3><p>A workflow for applying and managing Fast Flag settings.</p></article>
+<article class="card"><div class="icon" aria-hidden="true">✦</div><h3>Automatic setup</h3><p>Fast Flag settings selected with the computer in mind, as described in the release notes.</p></article>
+<article class="card"><div class="icon" aria-hidden="true">⌕</div><h3>Game discovery</h3><p>A search experience designed to make finding games easier.</p></article>
+<article class="card"><div class="icon" aria-hidden="true">◉</div><h3>Screen recording</h3><p>Capture gameplay with the recording feature included in the release.</p></article>
+<article class="card"><div class="icon" aria-hidden="true">↶</div><h3>30-second moments</h3><p>Save a recent gameplay moment with a configurable key, according to the release description.</p></article>
+<article class="card"><div class="icon" aria-hidden="true">◈</div><h3>Customization</h3><p>Adjust parts of the launcher experience to suit your setup.</p></article>
+</div></div></section>
+<section class="section" id="release"><div class="wrap">
+<div class="section-head"><div class="kicker">Official download</div><h2>Current release</h2><p class="sub">Use GitHub Releases as the canonical download source. This project page does not host a separate installer mirror.</p></div>
+<div class="release">
+<div class="release-main"><span class="pill">Published release</span><div class="version">v1.0.0</div><p class="sub">Kings Laucher initial executable release.</p><div class="actions" style="margin-top:24px"><a class="btn primary" href="https://github.com/BestWebBuilder123/Kings-laucher/releases/download/v1.0.0/KingsLaucher-1.0.0.exe">Download Windows executable ↗</a><a class="btn secondary" href="https://github.com/BestWebBuilder123/Kings-laucher/releases/tag/v1.0.0">Release notes ↗</a></div></div>
+<div class="release-side"><h3 style="margin:0 0 8px">File details</h3><dl class="details">
+<dt>Filename</dt><dd><code>KingsLaucher-1.0.0.exe</code></dd><dt>Platform</dt><dd>Windows executable</dd><dt>File size</dt><dd>74.8 MB</dd><dt>SHA-256</dt><dd><code>53058ed2c3acadedf9bfb3eea6a7a79ec28b68a5c1ad30ce74e5eba7c18b3c22</code></dd>
+</dl></div></div>
+<div class="notice"><strong>Download safely.</strong> Verify the SHA-256 digest before running the file. A matching hash confirms file integrity against the published digest, not that the program is harmless or independently verified. Do not disable antivirus or bypass Windows security warnings to run it. <a href="./INSTALLATION.md">Read the verification guide</a>.</div>
+</div></section>
+<section class="section" id="trust"><div class="wrap">
+<div class="section-head"><div class="kicker">Project transparency</div><h2>Clear about what’s published.</h2><p class="sub">Trust comes from specific, checkable information—not unsupported promises.</p></div>
+<div class="transparency">
+<div class="fact"><strong>Release source</strong><span>Downloads are linked directly to this repository’s GitHub Releases page.</span></div>
+<div class="fact"><strong>Source availability</strong><span>Application source files are not currently present on the main branch.</span></div>
+<div class="fact"><strong>Security status</strong><span>No independent security audit or digital-signature claim is made for this release.</span></div>
+<div class="fact"><strong>Compatibility</strong><span>Detailed minimum system requirements have not yet been published.</span></div>
+</div></div></section>
+<section class="section"><div class="wrap"><div class="cta-panel">
+<div><div class="kicker">Stay in the loop</div><h2 style="margin:8px 0 0">Follow the project on GitHub.</h2><p>See releases, report issues, and track future updates in one place.</p></div>
+<div class="actions"><a class="btn primary" href="https://github.com/BestWebBuilder123/Kings-laucher">Open repository ↗</a><a class="btn secondary" href="https://github.com/BestWebBuilder123/Kings-laucher/issues">Get support ↗</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© Kings Laucher · Independent project · Not affiliated with Roblox Corporation.</span><span><a href="https://github.com/BestWebBuilder123/Kings-laucher">GitHub</a> · <a href="https://github.com/BestWebBuilder123/Kings-laucher/releases">Releases</a> · <a href="../SECURITY.md">Security</a></span></div></footer>
+</body>
+</html>

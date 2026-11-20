@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a reproducible problem with Kings Laucher.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include passwords, tokens, private account data, or unredacted personal file paths.
+  - type: input
+    id: version
+    attributes:
+      label: Kings Laucher version
+      placeholder: "v1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "For example, Windows 11"
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that reliably reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Error message or additional details
+      description: Remove usernames, personal paths, tokens, and other private information.
+    validations:
+      required: false
